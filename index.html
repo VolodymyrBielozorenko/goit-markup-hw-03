@@ -146,18 +146,19 @@
       <section class="team section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="team-list list">
+          <ul class="team-list list flexbox">
             <li class="team-item">
               <img
                 src="./images/photo-1.jpg"
                 width="270"
                 height="260"
                 alt="Фото члена команды"
+                class="team-img img"
               />
               <h3 class="team-name">Николай Кучеренко</h3>
               <p class="team-position">Product Designer</p>
-              <ul>
-                <li>
+              <ul class="social-list list flexbox">
+                <li class="social-item">
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
@@ -168,7 +169,7 @@
                       alt="Логотип Instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://twitter.com/"
                     target="_blank"
@@ -177,7 +178,7 @@
                     ><img src="./images/logo-twitter.svg" alt="Логотип Twitter"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://facebook.com/"
                     target="_blank"
@@ -188,7 +189,7 @@
                       alt="Логотип Facebook"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://www.linkedin.com/"
                     target="_blank"
@@ -207,11 +208,12 @@
                 width="270"
                 height="260"
                 alt="Фото члена команды"
+                class="team-img img"
               />
               <h3 class="team-name">Ольга Иванова</h3>
               <p class="team-position">Frontend Developer</p>
-              <ul>
-                <li>
+              <ul class="social-list list flexbox">
+                <li class="social-item">
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
@@ -222,7 +224,7 @@
                       alt="Логотип Instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://twitter.com/"
                     target="_blank"
@@ -231,7 +233,7 @@
                     ><img src="./images/logo-twitter.svg" alt="Логотип Twitter"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://facebook.com/"
                     target="_blank"
@@ -242,7 +244,7 @@
                       alt="Логотип Facebook"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://www.linkedin.com/"
                     target="_blank"
@@ -261,11 +263,12 @@
                 width="270"
                 height="260"
                 alt="Фото члена команды"
+                class="team-img img"
               />
               <h3 class="team-name">Андрей Шевченко</h3>
               <p class="team-position">Marketing</p>
-              <ul>
-                <li>
+              <ul class="social-list list flexbox">
+                <li class="social-item">
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
@@ -276,7 +279,7 @@
                       alt="Логотип Instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://twitter.com/"
                     target="_blank"
@@ -285,7 +288,7 @@
                     ><img src="./images/logo-twitter.svg" alt="Логотип Twitter"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://facebook.com/"
                     target="_blank"
@@ -296,7 +299,7 @@
                       alt="Логотип Facebook"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://www.linkedin.com/"
                     target="_blank"
@@ -315,11 +318,12 @@
                 width="270"
                 height="260"
                 alt="Фото члена команды"
+                class="team-img img"
               />
               <h3 class="team-name">Иван Николаев</h3>
               <p class="team-position">UI Designer</p>
-              <ul>
-                <li>
+              <ul class="social-list list flexbox">
+                <li class="social-item">
                   <a
                     href="https://www.instagram.com/"
                     target="_blank"
@@ -330,7 +334,7 @@
                       alt="Логотип Instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://twitter.com/"
                     target="_blank"
@@ -339,7 +343,7 @@
                     ><img src="./images/logo-twitter.svg" alt="Логотип Twitter"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://facebook.com/"
                     target="_blank"
@@ -350,7 +354,7 @@
                       alt="Логотип Facebook"
                   /></a>
                 </li>
-                <li>
+                <li class="social-item">
                   <a
                     href="https://www.linkedin.com/"
                     target="_blank"
@@ -371,7 +375,7 @@
       <section class="clients section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="clients-list list">
+          <ul class="clients-list list flexbox">
             <li>
               <a
                 href=""
@@ -445,59 +449,65 @@
 
     <!--Подвал страницы-->
     <footer class="page-footer">
-      <div class="container">
-        <a href="./index.html" class="logo link logo-footer"
-          ><span>Web</span> Studio</a
-        >
-        <address class="company-address">
-          <p class="local-address">г. Киев, пр-т Леси Украинки, 26</p>
-          <a href="mailto:info@devstudio.com" class="address-link link"
-            >info@devstudio.com</a
+      <div class="container flexbox">
+        <div class="footer-container footer-address">
+          <a href="./index.html" class="logo link logo-footer"
+            ><span>Web</span> Studio</a
           >
-          <a href="tel:+380961111111" class="address-link link"
-            >+38 096 111 11 11</a
-          >
-        </address>
-        <b>Присоединяйтесь</b>
-        <ul>
-          <li>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ссылка Instagram"
-              ><img src="./images/logo-instagram.svg" alt="Логотип Instagram"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ссылка Twitter"
-              ><img src="./images/logo-twitter.svg" alt="Логотип Twitter"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://facebook.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ссылка Facebook"
-              ><img src="./images/logo-facebook.svg" alt="Логотип Facebook"
-            /></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Ссылка Linkedin"
-              ><img src="./images/logo-linkedin.svg" alt="Логотип Linkedin"
-            /></a>
-          </li>
-        </ul>
-        <b>Подпишитесь на рассылку</b>
+          <address class="company-address">
+            <p class="local-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <a href="mailto:info@devstudio.com" class="address-link link"
+              >info@devstudio.com</a
+            >
+            <a href="tel:+380961111111" class="address-link link"
+              >+38 096 111 11 11</a
+            >
+          </address>
+        </div>
+        <div class="footer-container footer-links">
+          <b>Присоединяйтесь</b>
+          <ul class="fl-list list flexbox">
+            <li class="fl-item">
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ссылка Instagram"
+                ><img src="./images/logo-instagram.svg" alt="Логотип Instagram"
+              /></a>
+            </li>
+            <li class="fl-item">
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ссылка Twitter"
+                ><img src="./images/logo-twitter.svg" alt="Логотип Twitter"
+              /></a>
+            </li>
+            <li class="fl-item">
+              <a
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ссылка Facebook"
+                ><img src="./images/logo-facebook.svg" alt="Логотип Facebook"
+              /></a>
+            </li>
+            <li class="fl-item">
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Ссылка Linkedin"
+                ><img src="./images/logo-linkedin.svg" alt="Логотип Linkedin"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-container footer-mailing">
+          <b>Подпишитесь на рассылку</b>
+        </div>
       </div>
     </footer>
   </body>

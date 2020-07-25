@@ -107,6 +107,9 @@ address {
   line-height: 1.166;
   text-align: center;
   color: var(--secondary-text);
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 b,
@@ -234,8 +237,18 @@ b,
   margin: 0;
 }
 
+/* Team */
+
 .team {
   background-color: var(--background-section);
+}
+
+.team-item {
+  margin-right: 30px;
+}
+
+.team-item:nth-child(4n) {
+  margin-right: 0;
 }
 
 .team-name,
@@ -248,27 +261,70 @@ b,
 .team-name {
   font-weight: 500;
   color: var(--secondary-text);
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
+
+.team-position {
+  margin-top: 10px;
+  margin-bottom: 16px;
+}
+
+.social-list {
+  justify-content: space-around;
+}
+
+/* Clients */
+
+.clients-list {
+  justify-content: space-around;
+}
+
+/* Footer */
 
 .page-footer {
   background-color: var(--background-footer);
+  padding: 60px 0;
+}
+
+.footer-address,
+.footer-links {
+  width: calc((100% - 30px * 2) / 4);
+  margin-right: 30px;
+}
+
+.footer-mailing {
+  width: calc(100% / 2);
 }
 
 .logo-footer {
   color: var(--white);
+  margin-right: 0;
 }
 
 .local-address {
   color: var(--white);
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .address-link {
   color: var(--alpha-white);
+  display: block;
+}
+
+.address-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-link:hover,
 .address-link:focus {
   color: var(--accent);
+}
+
+.fl-list {
+  justify-content: space-around;
 }
 
 /* Стили страницы Портфолио */
